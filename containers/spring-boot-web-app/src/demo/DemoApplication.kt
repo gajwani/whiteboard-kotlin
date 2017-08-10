@@ -1,21 +1,12 @@
 package demo
 
-import api.ApiApp
-import blog.BlogApp
-import blogStorage.BlogStorageApp
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import supermarket.CheckoutApp
+import whiteboard.Whiteboard
 
-@SpringBootApplication(
-        scanBasePackageClasses = arrayOf(
-                DemoApplication::class,
-                ApiApp::class,
-                BlogApp::class,
-                BlogStorageApp::class,
-                CheckoutApp::class
-        )
-)
+@SpringBootApplication(scanBasePackageClasses = arrayOf(
+    Whiteboard::class
+))
 class DemoApplication
 
 fun main(args: Array<String>) {

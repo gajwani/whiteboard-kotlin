@@ -46,7 +46,16 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 
 	compile(project(":components/api"))
-	compile(project(":components/blog-storage"))
 
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+	testCompile "org.seleniumhq.selenium:selenium-api:3.4.0"
+	testCompile "org.seleniumhq.selenium:selenium-chrome-driver:3.4.0"
+	testCompile "org.fluentlenium:fluentlenium-core:3.2.0"
+
+	testCompile "org.fluentlenium:fluentlenium-junit:3.2.0"
+	testCompile "org.fluentlenium:fluentlenium-assertj:3.2.0"
+
+	testCompile "junit:junit:4.12"
+	testCompile "org.seleniumhq.selenium:htmlunit-driver:2.25"
+	testCompile "xml-apis:xml-apis:1.4.01"
 }

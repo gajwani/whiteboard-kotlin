@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        kotlinVersion = '1.1.2-4'
+        kotlinVersion = '1.1.3-2'
         springBootVersion = '1.5.4.RELEASE'
     }
 
@@ -39,9 +39,6 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
     compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
     compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
-
-    compile(project(":components/blog"))
-    compile(project(":components/supermarket"))
 
     testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
 }
