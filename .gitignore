@@ -4,3 +4,4 @@
 spring-kotlin-demo.iml
 build
 out/
+*.iml
